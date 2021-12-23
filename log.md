@@ -31,3 +31,8 @@
 **Thoughts** 唸書是一回事，實際寫code是另外一回事，還沒有到非常流利的程度，寫code時都要先想一想、回憶一下語法。
 
 **Link(s) to work** [ex_7_3.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/ex_7_3.c)
+
+### Day 4: 2021-12-23
+**Today's Progress**: 閱讀Chapter 8 「C Characters and String」從8.1到8.5，並把8.5的內容用程式實做，學到了ctype.h裡的幾個function，把string轉成double或long的functions，如何使用fgets、getchar從命令列輸入讀取資料。
+
+**Thoughts** 有關字元與字串的函式非常多，沒辦法一次就全部弄熟，需要時間多練習。
