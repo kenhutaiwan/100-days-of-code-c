@@ -36,3 +36,14 @@
 **Today's Progress**: 閱讀Chapter 8 「C Characters and String」從8.1到8.5，並把8.5的內容用程式實做，學到了ctype.h裡的幾個function，把string轉成double或long的functions，如何使用fgets、getchar從命令列輸入讀取資料。
 
 **Thoughts** 有關字元與字串的函式非常多，沒辦法一次就全部弄熟，需要時間多練習。
+
+**Link(s) to work** [sec_8_5.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/sec_8_5.c)
+
+### Day 5: 2021-12-25
+**Today's Progress**: 讀完Chapter 8 「C Characters and String」，學到string.h裡例如strcpy、strcat的函式。一些對string做搜尋的函式不太容易理解，像是strpbrk就很難從函式名稱看出它的用途。
+這章雖然在講字元與字串，但8.9節郤在談對memory(也就是對變數)做類似處理（像是memcpy）的一些函式。
+回答幾個self-review questions，挑了習題8.11來實作。
+
+**Thoughts** 還是很不習慣用陣列和指標來操作字串，發明C的人當年幹麼不真的弄個字串資料型態出來？
+
+**Link(s) to work** [ex_8_11.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/ex_8_11.c)
