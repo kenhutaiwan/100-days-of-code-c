@@ -47,3 +47,11 @@
 **Thoughts** 還是很不習慣用陣列和指標來操作字串，發明C的人當年幹麼不真的弄個字串資料型態出來？
 
 **Link(s) to work** [ex_8_11.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/ex_8_11.c)
+
+### Day 6: 2021-12-27
+**Today's Progress**: 讀Chapter 9 「C Formatted Input/Output」中printf的部份。今天好睏，
+就沒有寫code練習了，這些東西在Java、Python裡也有，但或許有細微出入吧？這本書把格式化字串分成conversion
+specifier（熟悉的d、s、f等）、flags（如用-做向左對齊）、field width（ex：%8d）、precision（
+ex：%.3f）與literal characters（ex：\t、\n），這樣分類好有比較好理解。
+
+**Thoughts** 記得住而且會用的，似乎永遠只有那幾個。
