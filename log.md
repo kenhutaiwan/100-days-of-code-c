@@ -55,3 +55,7 @@ specifier（熟悉的d、s、f等）、flags（如用-做向左對齊）、field
 ex：%.3f）與literal characters（ex：\t、\n），這樣分類好有比較好理解。
 
 **Thoughts** 記得住而且會用的，似乎永遠只有那幾個。
+
+### Day 7: 2021-12-28
+**Today's Progress**: 讀完Chapter 9 「C Formatted Input/Output」，其實只是scanf的用法，
+如何用它讀入數字、字元、字串值。由於今天休假去禮納里走走，回來沒有寫code練習的時間，純粹只是讀書，但最後有打開IDE驗證一下讀入兩個整數的反應。在scanf中搭配field width會有不同的效果：scanf("%2d%d",a,b)，輸入123_456（_代表一個space），結果a=12,b=3。此外，printf中的%i就是列印一個有號十進位整數，但scanf中的%i，可用來讀入十進位、八進位（ex：070）、十六進位（ex：0x70）整數。 
