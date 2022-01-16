@@ -69,3 +69,13 @@ member取值。
 集中在一處，以提供基本的模型定義功能。
 
 **Link(s) to work** [10_2.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/10_2.c)
+
+### Day 9: 2022-01-16
+**Today's Progress**: 因為新年與預備1/12在PMI高雄分會的分享，中斷了兩個星期。今天先複習
+Chapter 9 「C Structures」，從10.1到10.7的內容，然後以P444-445 Listing 10.3的洗牌程式
+為練習對象，完成自己的coding實做。
+
+**Thoughts** 隔一段時間後又生疏了一些，過程中卡在C裡要如何宣告陣列（又回到Java的舊習慣，想去new
+個array）、如何取亂數，連C的null要怎麼寫都忘了。
+
+**Link(s) to work** [10_3.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/10_3.c)
