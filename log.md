@@ -79,3 +79,14 @@ Chapter 9 「C Structures」，從10.1到10.7的內容，然後以P444-445 Listi
 個array）、如何取亂數，連C的null要怎麼寫都忘了。
 
 **Link(s) to work** [10_3.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/10_3.c)
+
+### Day 10: 2022-01-17
+**Today's Progress**: 閱讀10.9 Bitwise operator，講到C語言中的位元運算。10.10 Bit Fields
+是個有趣的東西，它可以用在struct或union裡，並不是說這種field只能有一個bit，而是可以對int或
+unsigned int的field指定用幾個bit（甚至是0個）來儲存。10.11 Enumeration Constants，和Java
+裡的enum像，又不完全像。10.12 Anonymous Structures and Unions，一開始書上說struct裡不可
+以有別的struct，但自C11起有例外：struct裡可以有匿名struct。
+
+**Thoughts** 對enum做for loop的寫法一開始用錯，後來想想，要在java裡做這件事，其實類似。
+
+**Link(s) to work** [10_7.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/10_7.c)、[10_18.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/10_18.c)
