@@ -90,3 +90,14 @@ unsigned int的field指定用幾個bit（甚至是0個）來儲存。10.11 Enume
 **Thoughts** 對enum做for loop的寫法一開始用錯，後來想想，要在java裡做這件事，其實類似。
 
 **Link(s) to work** [10_7.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/10_7.c)、[10_18.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/10_18.c)
+
+### Day 11: 2022-01-18
+**Today's Progress**: 閱讀12.1到12.4，介紹如何在C語言裡用self-referenced struct來實做
+linked list。今天的實做只做到insert和print，delete還沒有做。其實可以看看Java裡的LinkedList
+提供哪些method，把它們在C裡實做出來，也算是蠻好的練習。
+
+**Thoughts** 在Java裡簡簡單單地new個LinkedList或ArrayList來用，沒想到在C裡要自己來寫。
+難處仍然在指標，在書本範例裡，為了pass by reference，用來指標的指標，這招對目前的自己，仍然算
+是奧秘啊！
+
+**Link(s) to work** [12_3.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_3.c)
