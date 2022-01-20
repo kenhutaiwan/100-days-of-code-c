@@ -101,3 +101,13 @@ linked list。今天的實做只做到insert和print，delete還沒有做。其�
 是奧秘啊！
 
 **Link(s) to work** [12_3.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_3.c)
+
+### Day 12: 2022-01-20
+**Today's Progress**: 繼續之前的linked list實做，加上delete。
+
+**Thoughts** 函式呼叫有呼叫方（caller）與被呼叫方（callee），要在caller接收callee造成的
+變化，一種方法是接收回傳值，另一種則是用pass by reference。今天在做delete時嘗試了這兩種，後
+者需要傳入「pointer of pointer」， 在函式裡處理這種東西時得時時提醒自己現在處理的到底是pointer
+還是pointer of pointer，決定要用address operator還是indirection operator，腦袋快打結了。
+
+**Link(s) to work** [12_3.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_3.c)
