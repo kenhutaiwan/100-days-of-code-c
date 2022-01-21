@@ -111,3 +111,10 @@ linked list。今天的實做只做到insert和print，delete還沒有做。其�
 還是pointer of pointer，決定要用address operator還是indirection operator，腦袋快打結了。
 
 **Link(s) to work** [12_3.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_3.c)
+
+### Day 13: 2022-01-21
+**Today's Progress**: 參考書上的fig 12.8，實做一個簡單的stack結構(FIFO)。
+
+**Thoughts** 有了linked list的實做經驗，這回再度使用pointer to pointer來做事，感覺順利多了。
+
+**Link(s) to work** [12_8.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_8.c)
