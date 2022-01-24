@@ -118,3 +118,10 @@ linked list。今天的實做只做到insert和print，delete還沒有做。其�
 **Thoughts** 有了linked list的實做經驗，這回再度使用pointer to pointer來做事，感覺順利多了。
 
 **Link(s) to work** [12_8.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_8.c)
+
+### Day 14: 2022-01-24
+**Today's Progress**: 參考書上的fig 12.13，實做一個簡單的queue結構(FIFO)。
+
+**Thoughts** 一開始沒辨識出Queue需要用到兩個指標，分別指向頭端和尾端。
+
+**Link(s) to work** [12_13.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_13.c)
