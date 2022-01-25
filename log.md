@@ -125,3 +125,14 @@ linked list。今天的實做只做到insert和print，delete還沒有做。其�
 **Thoughts** 一開始沒辨識出Queue需要用到兩個指標，分別指向頭端和尾端。
 
 **Link(s) to work** [12_13.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_13.c)
+
+
+### Day 15: 2022-01-25
+**Today's Progress**: 參考書上的fig 12.19，實做一個二元搜尋樹：值不重複，每個節點只有左和右
+兩個子節點，左節點一定<父節點；右節點一定>父節點。
+
+**Thoughts** 不寫不知道，原來組建二元樹以及用前、中、後序遍歷樹，都充份利用到遞迴。對於遞迴在
+建樹與遍歷時的處理過程其實沒真的搞懂，主要還是參考了書上的範例程式來把它做出來，後續還要再加強觀
+念。
+
+**Link(s) to work** [12_19.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_19.c)
