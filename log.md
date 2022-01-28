@@ -136,3 +136,18 @@ linked list。今天的實做只做到insert和print，delete還沒有做。其�
 念。
 
 **Link(s) to work** [12_19.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/12_19.c)
+
+### Day 16: 2022-01-28
+**Today's Progress**: 閱讀第十三章：C preprocessor。之前曾在一些程式裡看過它們，有些preprocessor
+當時並不瞭解用意與用法，原來可以定義巨集（macro）、可以做assert、改變輸出顯示時的行號等等。今天
+沒有做任何程式實作，先讓自己對這些preprocessor有個印象，之後突然想到有什麼應用的機會時，再回來
+查閱。本章共提到以下這些preprocessor：
+- #include
+- #define：用來定義符式常數（symbolic constant）或巨集（macro）
+- #if、#endif、#ifdef、#ifndef、#elif、#else
+- #error
+- #pragma
+- \# and ## operator
+- #line
+- 幾個預定義symbolic constant，ex：_FILE_
+- assert（它其實是個定義在assert.h的macro）
