@@ -151,3 +151,12 @@ linked list。今天的實做只做到insert和print，delete還沒有做。其�
 - #line
 - 幾個預定義symbolic constant，ex：_FILE_
 - assert（它其實是個定義在assert.h的macro）
+
+### Day 17: 2022-01-29
+**Today's Progress**: 今天開始學習CMake。之前在做影像辨識、IEC-61850時都遇見過它，當時只
+覺得很難理解，今天則先看過二、三篇快速上手文，用目前在做的C語言練習專案來嘗試，發現其實也並不是
+真的那麼難。同時也在notion上建立了cmake的筆記頁面。
+
+**Thoughts** 在Mac上也可以直接使用make，要用到cmake的時機目前剩下要在windows上做編繹，或是
+用來產生給visual studio或xcode用的project file。但我想把它學好一點，多少是有用的，或許回去
+用clion，就不會那麼恐慌了。
