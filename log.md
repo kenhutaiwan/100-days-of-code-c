@@ -160,3 +160,14 @@ linked list。今天的實做只做到insert和print，delete還沒有做。其�
 **Thoughts** 在Mac上也可以直接使用make，要用到cmake的時機目前剩下要在windows上做編繹，或是
 用來產生給visual studio或xcode用的project file。但我想把它學好一點，多少是有用的，或許回去
 用clion，就不會那麼恐慌了。
+
+### Day 18: 2022-02-08
+**Today's Progress**: 過完年回高雄，昨天重拾C How to program這本書，在chapter 5 C Functions
+這章的exercise中挑了5-36 Tower of Hanoi來做。知道要用遞迴，但開始後就寫不下去，難以推導出
+遞迴的寫法。看了兩篇介紹遞迴的文章，今天上班時用紙筆先做一次推導，才試出來。回家後又挑了5-35，寫
+個非遞迴（改用迴圈）的Fibonacci series，也花了點時間。
+
+**Thoughts** [为什么你学不会递归？告别递归，谈谈我的一些经验](https://zhuanlan.zhihu.com/p/59389994)，作者整理了自己如何理解並推導遞迴寫作的想法，從回應來看，大多數人贊同，但也有少數人不
+做此想。但作者提出的三步驟，我覺得是有幫助。
+
+**Link(s) to work** [ex_5_35.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/ex_5_35.c)、[ex_5_36.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/ex_5_36.c)
