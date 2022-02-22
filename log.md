@@ -171,3 +171,40 @@ linked list。今天的實做只做到insert和print，delete還沒有做。其�
 做此想。但作者提出的三步驟，我覺得是有幫助。
 
 **Link(s) to work** [ex_5_35.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/ex_5_35.c)、[ex_5_36.c](https://github.com/kenhutaiwan/learning-practice/blob/main/c/c_how_to_program/src/ex_5_36.c)
+
+### Day 21: 2022-02-22
+**Today's Progress**: 利用CMake官網的[教學](https://cmake.org/cmake/help/v3.23/guide/tutorial/A%20Basic%20Starting%20Point.html)並clone他們的source code來做CMake的練習。
+可以在CMakeLists.txt裡定義應用程式版本，然後生成header供程式include。
+
+```
+target_include_directories(Tutorial PUBLIC
+                           "${PROJECT_BINARY_DIR}"
+                           )
+```
+
+這段目前不太理解，但${PROJECT_BINARY_DIR}似乎對應到我所在的執行目錄（Step1_build），因生成的
+TutorialConfig.h產生於此。
+
+原來可以用`cmake --build .`取代直接執行產生的Makefile，要指定C++語言特定版本，使用：
+
+```
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+```
+
+教學的第二步（Step 2）講到如何加入一個函式庫（由一個.cxx、一個.h檔組成），這應可類比到我在C專
+案自己寫的.c、.h。要做這件事，用到add_subdirectory、target_link_libraries、target_include_directories等指令，也示範了如何用option指令來建立一個ON／OFF的選擇器：`option(USE_MYMATH "Use tutorial provided math implementation" ON)`，
+在程式裡透過這個選擇器的ON／OF來決定要使用哪一個庫：
+
+```
+#ifdef USE_MYMATH
+  const double outputValue = mysqrt(inputValue);
+#else
+  const double outputValue = sqrt(inputValue);
+#endif
+```
+
+若指定為ON：`cmake ../Step2 -DUSE_MYMATH=ON`，產生的TutorialConfig.h裡，會帶有一行：`#define USE_MYMATH`
+
+**Thoughts** 一直很想把CMake學起來，過去由於教學用的是C++的例子，一直有點排斥，後來才想通：
+從教學可以看到如何一步步用CMake建立專案建置方案，自己再想辦法套用到C專案上就好了。
