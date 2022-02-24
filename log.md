@@ -208,3 +208,32 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 **Thoughts** 一直很想把CMake學起來，過去由於教學用的是C++的例子，一直有點排斥，後來才想通：
 從教學可以看到如何一步步用CMake建立專案建置方案，自己再想辦法套用到C專案上就好了。
+
+### Day 22: 2022-02-24
+**Today's Progress**: 繼續 CMake官網的[教學](https://cmake.org/cmake/help/v3.23/guide/tutorial/A%20Basic%20Starting%20Point.html)的Step3、Step4。使用target_include_directories與
+INTERFACE關鍵字來定義使用需求（usage requirement），CMake的PUBLIC、PRIVATE、INTERFACE
+不好理解，有人寫了篇心得：[CMake: Public VS Private VS Interfac](https://leimao.github.io/blog/CMake-Public-Private-Interface/)，用物件繼承系統的這類修飾子去想，比較容易明白。
+
+```
+target_include_directories(MathFunctions
+          INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
+          )
+```
+Step4則介紹怎麼用CMake提供install與test兩種建置目標（goal），測試結果，cmake的install要
+在源目錄（ie：CMake/Help/guide/tutorial/Step4）才有用，在另建的build目錄執行會失敗（但用make install是OK的）：
+
+```
+cmake --build .
+cmake --install .
+```
+但若像上頭那樣不用--prefix指定安裝目錄，預設會安裝到以下系統路徑：
+
+> -- Install configuration: ""
+-- Installing: /usr/local/bin/Tutorial
+-- Installing: /usr/local/include/TutorialConfig.h
+-- Installing: /usr/local/lib/libMathFunctions.a
+-- Installing: /usr/local/include/MathFunctions.h
+
+
+**Thoughts** CMake的tutorial真的不好讀、不好理解，應該一步步仔細研究它，查清楚每個指令的用
+途，然後特別為此寫筆記做學習記錄。另外，在網路上找到的CMake Cookbook看來比較容易讀喔。
