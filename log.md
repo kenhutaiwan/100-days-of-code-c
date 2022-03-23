@@ -237,3 +237,9 @@ cmake --install .
 
 **Thoughts** CMake的tutorial真的不好讀、不好理解，應該一步步仔細研究它，查清楚每個指令的用
 途，然後特別為此寫筆記做學習記錄。另外，在網路上找到的CMake Cookbook看來比較容易讀喔。
+
+### Day 23: 2022-03-23
+**Today's Progress**: 不得了，居然停了一個月！繼續 CMake官網的[教學](https://cmake.org/cmake/help/v3.23/guide/tutorial/A%20Basic%20Starting%20Point.html)的Step5。使用check_symbol_exists模組來檢查系統上有沒有需要的function存在，若有，則在原始碼中使用它。至於如何讓程式原始碼知道檢
+查結果，作法是先使用來建立所謂的compilation definition：`target_compile_definitions(MathFunctionsPRIVATE "HAVE_LOG" "HAVE_EXP")` ，然後再於原始碼中用`#if defined(HAVE_LOG) && defined(HAVE_EXP)`來取得檢查結果。
+
+**Thoughts** 如果我要開發的C程式對平台有相依性，今天學到的這一招應該可以派上用場。
