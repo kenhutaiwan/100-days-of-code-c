@@ -243,3 +243,11 @@ cmake --install .
 查結果，作法是先使用來建立所謂的compilation definition：`target_compile_definitions(MathFunctionsPRIVATE "HAVE_LOG" "HAVE_EXP")` ，然後再於原始碼中用`#if defined(HAVE_LOG) && defined(HAVE_EXP)`來取得檢查結果。
 
 **Thoughts** 如果我要開發的C程式對平台有相依性，今天學到的這一招應該可以派上用場。
+
+
+### Day 24: 2022-03-24
+**Today's Progress**: 繼續CMake教學的Step6。使用add_custom_command來增加一個自定義命令
+(command),在編繹過程中藉由這個命令的執行來産生一個檔案,這個檔案也會被用在程式的運算中,因為那個
+自定義命令所對應的C++程式産生的是一個header file,被include後會使用其中旳一個double array.
+
+**Thoughts** 有時在軟體建置的過桯中會需要産生一些中間檔供定用途使用,此時就能派上用場.
